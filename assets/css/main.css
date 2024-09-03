@@ -1,0 +1,363 @@
+ :root {
+     --Light-Sea-Green-Main: #20B2AA;
+     --Green-Blue-Main: #2071B2;
+     --Dark-Sea-Green-Other: #105955;
+     --Crystal-Other: #A5E0DD;
+     --Black: #000;
+     --Tinted-Black: #222;
+     --Dark-Gray: #555;
+     --Medium-Gray: #777;
+     --white: #fff;
+
+
+     /* Longnh has just updated some of color in here */
+
+     --text-color-main: #000000;
+     --text-color-highlight: rgb(255, 136, 0);
+     --boder-color-dashed: #a5a4a4;
+     --background-color-light: #ffffff;
+     --background-color-xam: #e4d7d7;
+     --background-color-xam-light: rgba(0, 0, 0, 0.1);
+ }
+
+ .form {
+     width: 35%;
+     background-color: var(--white);
+     border-radius: 8px;
+     margin: 0 auto;
+     padding: 30px;
+     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+
+
+ }
+
+ h1 {
+     /* padding: 15px;
+     text-align: center;
+     position: absolute; 
+     top: 16%;
+     left: 50%; 
+     transform: translateX(-50%);
+     font-weight: bold;
+     color: var(--Dark-Gray); 
+     font-size: 30px; 
+     display: none;
+     text-transform: uppercase;  */
+ }
+
+ .row {
+     display: flex;
+     flex-wrap: wrap;
+     padding: 3px 0;
+     justify-content: space-between;
+     width: 100%;
+ }
+
+ .row .back {
+     color: var(--Green-Blue-Main);
+     font-size: medium;
+     font-weight: 400;
+     margin-bottom: 25px;
+ }
+
+ .info {
+     width: 47%;
+     margin-bottom: 20px;
+
+ }
+
+ .info-label {
+     color: var(--Green-Blue-Main);
+     font-size: 15px;
+     font-weight: 700;
+     margin-bottom: 8px;
+
+ }
+
+ .info-input {
+     /* width: 100%;
+     border-radius: 9px;
+     padding: 16px 10px;
+     border: var(--Medium-Gray) solid 2px;
+     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+     font-size: 12px; */
+     /* height: 45px; */
+
+
+
+
+     border: 1px solid var(--boder-color-dashed);
+     height: 40px;
+     width: 100%;
+     border-radius: 3px;
+     padding: 16px 10px;
+     font-size: 13px;
+     font-family: 'Kanit', sans-serif;
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+ }
+
+
+
+
+ input:focus {
+     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+     outline: none;
+     border: none;
+ }
+
+ .info-label--error {
+     color: red;
+     font-weight: 300;
+     font-size: small;
+     /* font-style: italic; */
+     margin-top: 7px;
+ }
+
+ .info-label--error.hidden {
+     display: none;
+ }
+
+ input::placeholder {
+     /* font-style: italic; */
+     font-weight: 100 !important;
+ }
+
+ .row h3 {
+     color: var(--Green-Blue-Main);
+     font-size: smaller !important;
+     font-weight: 700;
+     margin-bottom: 8px;
+ }
+
+ ul {
+     list-style: none;
+ }
+
+ .status-item {
+     width: 18%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ .status-item.status--none .status-name {
+     color: var(--Crystal-Other);
+     font-weight: 700;
+     font-size: 10px !important;
+ }
+
+ .status-item.status--none img {
+     filter: grayscale(100%);
+     opacity: 0.5;
+ }
+
+ .status-item .status-name {
+     color: var(--Dark-Sea-Green-Other);
+     font-weight: 700;
+     font-size: 10px !important;
+ }
+
+ img {
+     width: 40%;
+ }
+
+ .row.center {
+     justify-content: center;
+ }
+
+ .status-value {
+     margin-top: 3px;
+     width: 85%;
+
+ }
+
+ .status-value:hover {
+     cursor: pointer;
+ }
+
+ input[type="range"] {
+     /* removing default appearance */
+     -webkit-appearance: none;
+     appearance: none;
+     /* creating a custom design */
+     cursor: pointer;
+     outline: none;
+     /*  slider progress trick  */
+     overflow: hidden;
+     border-radius: 16px;
+     height: 12px;
+ }
+
+ /* Track: webkit browsers */
+ input[type="range"]::-webkit-slider-runnable-track {
+     background: var(--Crystal-Other);
+     border-radius: 16px;
+     height: 12px;
+ }
+
+
+ /* Thumb: webkit */
+ input[type="range"]::-webkit-slider-thumb {
+     /* removing default appearance */
+     -webkit-appearance: none;
+     appearance: none;
+     /* creating a custom design */
+     height: 12px;
+     /* Increase the height */
+     width: 12px;
+     /* Increase the width */
+     background-color: var(--Crystal-Other);
+     border-radius: 50%;
+     border: 3px solid rgba(16, 89, 85, 0.6);
+     /*  slider progress trick  */
+     box-shadow: -407px 0 0 400px var(--Dark-Sea-Green-Other);
+
+ }
+
+
+
+
+ textarea {
+     width: 100%;
+
+     /* border: var(--Medium-Gray) solid 2px;
+     color: var(--Medium-Gray);
+     border-radius: 9px;
+     resize: none;
+     margin: 20px 0;
+     padding: 16px 10px;
+     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); */
+
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border: 1px solid var(--boder-color-dashed);
+     resize: none;
+     width: 100%;
+     border-radius: 3px;
+     padding: 16px 10px;
+     font-size: 13px;
+     font-family: 'Kanit', sans-serif;
+
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+ }
+
+ textarea:focus {
+     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+     outline: none;
+     border: none;
+ }
+
+
+ .submit {
+     width: 100%;
+     border-radius: 4px;
+     padding: 10px;
+     border: none;
+     background-color: var(--Light-Sea-Green-Main);
+     color: white;
+     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+     font-size: 17px;
+     font-weight: 700;
+
+
+     font-family: 'Kanit', sans-serif;
+
+
+ }
+
+ .submit:hover {
+     transition: 0.1s;
+
+     background-color: var(--Dark-Sea-Green-Other);
+     cursor: pointer;
+ }
+
+
+
+ /* Css for project, made by Longnh04 */
+ /* Responsive Styles */
+
+ /* thiết bị nhỏ hơn 600px (điện thoại di động) */
+ /* @media (max-width: 600px) {
+    .form {
+        width: 80%; 
+        padding: 20px;  
+        background-color: var(--white);
+        border-radius: 8px;
+        margin: 0 auto;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .info {
+        width: 100%;  
+        margin-bottom: 15px;  
+    }
+
+    .info-input {
+        padding: 12px 8px;  
+    }
+} */
+
+/* Mobile (nhỏ hơn 438px) */
+@media (max-width: 437px) {
+    .form {
+        width: 80%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .info {
+        width: 100%;  
+        margin-bottom: 15px;  
+    }
+
+    .info-input {
+        padding: 12px 8px;  
+    }
+}
+
+/* Tablet và iPad (438px - 891px) */
+@media (min-width: 438px) and (max-width: 891px) {
+    .form {
+        width: 80%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .info {
+        width: 100%;  
+        margin-bottom: 15px;  
+    }
+
+    .info-input {
+        padding: 12px 8px;  
+    }
+}
+
+/* Laptop và màn hình vừa (892px - 1236px) */
+@media (min-width: 892px) and (max-width: 1236px) {
+    .form {
+        width: 40%;
+        padding: 30px;
+        margin: 0 auto;
+    }
+}
+
+/* iPad ngang và màn hình lớn hơn (802px - 1024px) */
+@media (min-width: 802px) and (max-width: 1024px) {
+    .form {
+        width: 50%;
+        padding: 30px;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop và laptop lớn (trên 1024px) */
+@media (min-width: 1025px) {
+    .form {
+        width: 35%;
+        padding: 30px;
+        margin: 0 auto;
+    }
+}
